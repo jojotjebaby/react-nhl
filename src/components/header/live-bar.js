@@ -9,7 +9,8 @@ class LiveBar extends Component {
 	//Make the Ajax call with timeout
 	componentWillMount() {
 		
-
+		this.props.updateLiveGames(); 
+		
 		setInterval(function() { 
 			this.props.updateLiveGames(); 
 		}.bind(this), 5000);
