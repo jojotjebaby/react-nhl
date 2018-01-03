@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.livebar{
+	margin-top: 56px;
+	display: flex;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.livebar .livebar__wrapper{
+	display: flex;
+}
+
+.livebar .card.game{
+	height: 100px;
+	width: 200px;
+	padding: 15px;
+	justify-content: center;
+}
+
+.livebar .card.game .teams{
+	
+}
+
+.livebar .card.game .teams .team__away, .livebar .card.game .teams .team__home{
+	display: flex;
+}
+
+.livebar .card.game .teams .team__away .name, .livebar .card.game .teams .team__home .name{
+	margin: 0 10px 0 0;
+	width: 40px;
+}
+
+.livebar .card.game .teams .team__away .logo, .livebar .card.game .teams .team__home .logo{
+	width: 23px;
+	height: 19px;
+}
+
+.game header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+
+.game header .team {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.game header .team .logo {
+	width: 250px;
+    height: 250px;
+}
